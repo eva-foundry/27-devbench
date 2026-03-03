@@ -1,0 +1,149 @@
+{
+  "schema": "eva.veritas-plan.v1",
+  "generated_at": "2026-02-25T06:37:27.107Z",
+  "generated_from": [
+    "PLAN.md"
+  ],
+  "format_detected": "veritas",
+  "prefix": "F27",
+  "features": [
+    {
+      "id": "F27-01",
+      "title": "?? Purpose",
+      "source_heading": "## Feature: ?? Purpose [ID=F27-01]",
+      "stories": []
+    },
+    {
+      "id": "F27-02",
+      "title": "? Key Features",
+      "source_heading": "## Feature: ? Key Features [ID=F27-02]",
+      "stories": [
+        {
+          "id": "F27-02-001",
+          "title": "Core Capabilities",
+          "feature_id": "F27-02",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F27-02-002",
+          "title": "Enterprise Code Review Features",
+          "feature_id": "F27-02",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F27-02-003",
+          "title": "Governance & Compliance",
+          "feature_id": "F27-02",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F27-03",
+      "title": "?? Quick Start",
+      "source_heading": "## Feature: ?? Quick Start [ID=F27-03]",
+      "stories": [
+        {
+          "id": "F27-03-001",
+          "title": "Installation",
+          "feature_id": "F27-03",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F27-03-002",
+          "title": "Development",
+          "feature_id": "F27-03",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F27-03-003",
+          "title": "Enable Demo Mode",
+          "feature_id": "F27-03",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F27-04",
+      "title": "?? Documentation",
+      "source_heading": "## Feature: ?? Documentation [ID=F27-04]",
+      "stories": []
+    },
+    {
+      "id": "F27-05",
+      "title": "??? Technology Stack",
+      "source_heading": "## Feature: ??? Technology Stack [ID=F27-05]",
+      "stories": []
+    },
+    {
+      "id": "F27-06",
+      "title": "?? Design System",
+      "source_heading": "## Feature: ?? Design System [ID=F27-06]",
+      "stories": []
+    },
+    {
+      "id": "F27-07",
+      "title": "?? Security",
+      "source_heading": "## Feature: ?? Security [ID=F27-07]",
+      "stories": []
+    },
+    {
+      "id": "F27-08",
+      "title": "?? Project Status",
+      "source_heading": "## Feature: ?? Project Status [ID=F27-08]",
+      "stories": []
+    },
+    {
+      "id": "F27-09",
+      "title": "??? Use Cases",
+      "source_heading": "## Feature: ??? Use Cases [ID=F27-09]",
+      "stories": [
+        {
+          "id": "F27-09-001",
+          "title": "COBOL Modernization",
+          "feature_id": "F27-09",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F27-09-002",
+          "title": "Client-Server Migration",
+          "feature_id": "F27-09",
+          "source": "heading",
+          "tasks": []
+        },
+        {
+          "id": "F27-09-003",
+          "title": "Technical Debt Reduction",
+          "feature_id": "F27-09",
+          "source": "heading",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "F27-10",
+      "title": "?? Contributing",
+      "source_heading": "## Feature: ?? Contributing [ID=F27-10]",
+      "stories": []
+    },
+    {
+      "id": "F27-11",
+      "title": "?? Support",
+      "source_heading": "## Feature: ?? Support [ID=F27-11]",
+      "stories": []
+    },
+    {
+      "id": "F27-12",
+      "title": "?? License",
+      "source_heading": "## Feature: ?? License [ID=F27-12]",
+      "stories": []
+    }
+  ]
+}

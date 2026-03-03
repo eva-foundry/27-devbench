@@ -1,0 +1,1013 @@
+{
+  "meta": {
+    "schema": "eva.discovery.v2",
+    "generated_at": "2026-02-25T06:37:27.646Z",
+    "repo": "C:\\AICOE\\eva-foundation\\27-devbench"
+  },
+  "project": null,
+  "planned": {
+    "epic": {
+      "title": "EVA DevBench",
+      "source": "README.md"
+    },
+    "features": [
+      {
+        "id": "F27-01",
+        "title": "?? Purpose",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F27-02",
+        "title": "? Key Features",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F27-03",
+        "title": "?? Quick Start",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F27-04",
+        "title": "?? Documentation",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F27-05",
+        "title": "??? Technology Stack",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F27-06",
+        "title": "?? Design System",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F27-07",
+        "title": "?? Security",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F27-08",
+        "title": "?? Project Status",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F27-09",
+        "title": "??? Use Cases",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F27-10",
+        "title": "?? Contributing",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F27-11",
+        "title": "?? Support",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F27-12",
+        "title": "?? License",
+        "source": "veritas-plan.json"
+      }
+    ],
+    "stories": [
+      {
+        "id": "F27-02-001",
+        "title": "Core Capabilities",
+        "feature_id": "F27-02",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F27-02-002",
+        "title": "Enterprise Code Review Features",
+        "feature_id": "F27-02",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F27-02-003",
+        "title": "Governance & Compliance",
+        "feature_id": "F27-02",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F27-03-001",
+        "title": "Installation",
+        "feature_id": "F27-03",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F27-03-002",
+        "title": "Development",
+        "feature_id": "F27-03",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F27-03-003",
+        "title": "Enable Demo Mode",
+        "feature_id": "F27-03",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F27-09-001",
+        "title": "COBOL Modernization",
+        "feature_id": "F27-09",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F27-09-002",
+        "title": "Client-Server Migration",
+        "feature_id": "F27-09",
+        "source": "veritas-plan.json"
+      },
+      {
+        "id": "F27-09-003",
+        "title": "Technical Debt Reduction",
+        "feature_id": "F27-09",
+        "source": "veritas-plan.json"
+      }
+    ],
+    "tasks": [],
+    "acceptance": [],
+    "declared_status": {}
+  },
+  "actual": {
+    "artifacts": [
+      {
+        "path": ".env.example",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": ".gitignore",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": ".spark-initial-sha",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "architecture.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "AZURE_DEPLOYMENT.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "commit-and-push.sh",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "components.json",
+        "type": "data",
+        "story_tags": []
+      },
+      {
+        "path": "DEPLOYMENT.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "DEPLOYMENT_CHECKLIST.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "EXPORT.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "FEATURES.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "git-commit-push.mjs",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "GIT_INSTRUCTIONS.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "index.html",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "LICENSE",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "package-lock.json",
+        "type": "data",
+        "story_tags": []
+      },
+      {
+        "path": "package.json",
+        "type": "data",
+        "story_tags": []
+      },
+      {
+        "path": "PLAN.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "PRD.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "push-to-github.sh",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "PUSH_TO_GITHUB.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "QUICKSTART.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "QUICKSTART_DEPLOY.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "README.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "runtime.config.json",
+        "type": "data",
+        "story_tags": []
+      },
+      {
+        "path": "SECURITY.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "spark.meta.json",
+        "type": "data",
+        "story_tags": []
+      },
+      {
+        "path": "staticwebapp.config.json",
+        "type": "data",
+        "story_tags": []
+      },
+      {
+        "path": "tailwind.config.js",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "theme.json",
+        "type": "data",
+        "story_tags": []
+      },
+      {
+        "path": "tsconfig.json",
+        "type": "data",
+        "story_tags": []
+      },
+      {
+        "path": "verify-before-push.sh",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "vite.config.ts",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": ".github/copilot-instructions.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": ".github/dependabot.yml",
+        "type": "config",
+        "story_tags": []
+      },
+      {
+        "path": "archive-27-devbench/.gitignore",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "archive-27-devbench/business-case.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "archive-27-devbench/conceptual.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "archive-27-devbench/CONTRIBUTING.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "archive-27-devbench/eva-devbench-features.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "archive-27-devbench/mvp-executive.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "archive-27-devbench/mvp-prompt.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "archive-27-devbench/openapi.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "archive-27-devbench/PRIMING-COMPLETE.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "archive-27-devbench/README.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "archive-27-devbench/spark-prompt.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "archive-27-devbench/spark-screens.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "src/App.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/ErrorFallback.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/index.css",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "src/main.css",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "src/main.tsx",
+        "type": "code",
+        "story_tags": [
+          "F27-02-001",
+          "F27-02-002",
+          "F27-02-003",
+          "F27-03-001",
+          "F27-03-002",
+          "F27-03-003",
+          "F27-09-001",
+          "F27-09-002",
+          "F27-09-003"
+        ]
+      },
+      {
+        "path": "src/vite-end.d.ts",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": ".github/copilot-skills/00-skill-index.skill.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": ".github/workflows/azure-static-web-apps.yml",
+        "type": "config",
+        "story_tags": []
+      },
+      {
+        "path": "archive-27-devbench/.github/.project07-compliance-report.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "archive-27-devbench/.github/.project07-deployment-report.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "archive-27-devbench/.github/copilot-instructions.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "archive-27-devbench/docs/MVP-IMPLEMENTATION-GUIDE.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/AgentRationalePanel.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ArtifactViewer.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/DiffViewer.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/EnhancedDiffViewer.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ExcludedFilesPanel.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ExplainHunkPanel.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ReviewModePanel.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/SemanticGroupsPanel.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/hooks/use-mobile.ts",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/hooks/use-sample-diff.ts",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/lib/api.ts",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/lib/app-context.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/lib/config.ts",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/lib/i18n.ts",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/lib/mock-api.ts",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/lib/review-analysis.ts",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/lib/semantic-grouping.ts",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/lib/syntax-highlighter.ts",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/lib/syntax-highlighter.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/lib/types.ts",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/lib/utils.ts",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/lib/word-diff.ts",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/styles/theme.css",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "archive-27-devbench/docs/adr/ADR-001-APIM-as-single-gateway.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "archive-27-devbench/docs/adr/ADR-002-work-package-orchestration-pattern.md",
+        "type": "doc",
+        "story_tags": []
+      },
+      {
+        "path": "archive-27-devbench/infra/apim-policies/audit-logging.xml",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "archive-27-devbench/infra/apim-policies/credential-injection.xml",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "archive-27-devbench/infra/apim-policies/jwt-validation.xml",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "archive-27-devbench/infra/apim-policies/rate-limiting.xml",
+        "type": "other",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/pages/ContextBundlesPage.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/pages/ProjectsPage.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/pages/RunsPage.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/pages/SettingsPage.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/accordion.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/alert-dialog.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/alert.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/aspect-ratio.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/avatar.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/badge.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/breadcrumb.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/button.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/calendar.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/card.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/carousel.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/chart.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/checkbox.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/collapsible.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/command.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/context-menu.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/dialog.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/drawer.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/dropdown-menu.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/form.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/hover-card.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/input-otp.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/input.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/label.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/menubar.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/navigation-menu.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/pagination.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/popover.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/progress.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/radio-group.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/resizable.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/scroll-area.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/select.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/separator.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/sheet.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/sidebar.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/skeleton.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/slider.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/sonner.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/switch.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/table.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/tabs.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/textarea.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/toggle-group.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/toggle.tsx",
+        "type": "code",
+        "story_tags": []
+      },
+      {
+        "path": "src/components/ui/tooltip.tsx",
+        "type": "code",
+        "story_tags": []
+      }
+    ],
+    "story_artifact_map": {
+      "F27-02-001": {
+        "artifacts": [
+          {
+            "path": "src/main.tsx",
+            "type": "code",
+            "story_tags": [
+              "F27-02-001",
+              "F27-02-002",
+              "F27-02-003",
+              "F27-03-001",
+              "F27-03-002",
+              "F27-03-003",
+              "F27-09-001",
+              "F27-09-002",
+              "F27-09-003"
+            ]
+          }
+        ]
+      },
+      "F27-02-002": {
+        "artifacts": [
+          {
+            "path": "src/main.tsx",
+            "type": "code",
+            "story_tags": [
+              "F27-02-001",
+              "F27-02-002",
+              "F27-02-003",
+              "F27-03-001",
+              "F27-03-002",
+              "F27-03-003",
+              "F27-09-001",
+              "F27-09-002",
+              "F27-09-003"
+            ]
+          }
+        ]
+      },
+      "F27-02-003": {
+        "artifacts": [
+          {
+            "path": "src/main.tsx",
+            "type": "code",
+            "story_tags": [
+              "F27-02-001",
+              "F27-02-002",
+              "F27-02-003",
+              "F27-03-001",
+              "F27-03-002",
+              "F27-03-003",
+              "F27-09-001",
+              "F27-09-002",
+              "F27-09-003"
+            ]
+          }
+        ]
+      },
+      "F27-03-001": {
+        "artifacts": [
+          {
+            "path": "src/main.tsx",
+            "type": "code",
+            "story_tags": [
+              "F27-02-001",
+              "F27-02-002",
+              "F27-02-003",
+              "F27-03-001",
+              "F27-03-002",
+              "F27-03-003",
+              "F27-09-001",
+              "F27-09-002",
+              "F27-09-003"
+            ]
+          }
+        ]
+      },
+      "F27-03-002": {
+        "artifacts": [
+          {
+            "path": "src/main.tsx",
+            "type": "code",
+            "story_tags": [
+              "F27-02-001",
+              "F27-02-002",
+              "F27-02-003",
+              "F27-03-001",
+              "F27-03-002",
+              "F27-03-003",
+              "F27-09-001",
+              "F27-09-002",
+              "F27-09-003"
+            ]
+          }
+        ]
+      },
+      "F27-03-003": {
+        "artifacts": [
+          {
+            "path": "src/main.tsx",
+            "type": "code",
+            "story_tags": [
+              "F27-02-001",
+              "F27-02-002",
+              "F27-02-003",
+              "F27-03-001",
+              "F27-03-002",
+              "F27-03-003",
+              "F27-09-001",
+              "F27-09-002",
+              "F27-09-003"
+            ]
+          }
+        ]
+      },
+      "F27-09-001": {
+        "artifacts": [
+          {
+            "path": "src/main.tsx",
+            "type": "code",
+            "story_tags": [
+              "F27-02-001",
+              "F27-02-002",
+              "F27-02-003",
+              "F27-03-001",
+              "F27-03-002",
+              "F27-03-003",
+              "F27-09-001",
+              "F27-09-002",
+              "F27-09-003"
+            ]
+          }
+        ]
+      },
+      "F27-09-002": {
+        "artifacts": [
+          {
+            "path": "src/main.tsx",
+            "type": "code",
+            "story_tags": [
+              "F27-02-001",
+              "F27-02-002",
+              "F27-02-003",
+              "F27-03-001",
+              "F27-03-002",
+              "F27-03-003",
+              "F27-09-001",
+              "F27-09-002",
+              "F27-09-003"
+            ]
+          }
+        ]
+      },
+      "F27-09-003": {
+        "artifacts": [
+          {
+            "path": "src/main.tsx",
+            "type": "code",
+            "story_tags": [
+              "F27-02-001",
+              "F27-02-002",
+              "F27-02-003",
+              "F27-03-001",
+              "F27-03-002",
+              "F27-03-003",
+              "F27-09-001",
+              "F27-09-002",
+              "F27-09-003"
+            ]
+          }
+        ]
+      }
+    },
+    "commit_evidence_map": {}
+  }
+}

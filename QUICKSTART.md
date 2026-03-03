@@ -1,0 +1,375 @@
+# EVA DevBench - Quick Start Guide
+
+## 🎯 What is EVA DevBench?
+
+EVA DevBench is an AI-assisted software engineering platform designed for government teams modernizing legacy applications. It helps you:
+
+- **Reverse engineer** COBOL, client-server, and three-tier legacy code
+- **Generate scaffolding** for modern architectures
+- **Refactor modules** with AI assistance
+- **Create comprehensive test suites** for untested code
+- **Generate documentation** from existing codebases
+- **Review AI-generated changes** with enterprise-grade governance
+
+## 🚀 5-Minute Demo Setup
+
+### Step 1: Clone and Install
+```bash
+git clone <repository-url>
+cd eva-devbench
+npm install
+```
+
+### Step 2: Start Development Server
+```bash
+npm run dev
+```
+
+Open `http://localhost:5173` in your browser.
+
+### Step 3: Enable Demo Mode
+1. Click **Settings** in the left navigation
+2. Toggle **Demo Mode** to ON
+3. Click **Projects** in the left navigation
+
+You're now viewing the app with mock data!
+
+## 📚 Core Workflows
+
+### Workflow 1: Create a Project
+
+**Purpose**: Organize your modernization work
+
+1. Navigate to **Projects** page
+2. Click **Create Project**
+3. Fill in:
+   - **Name**: "Legacy Billing System Migration"
+   - **Description**: "Modernize COBOL billing to .NET"
+   - **Cost Center**: "IT-MODERNIZATION-001"
+   - **Owners**: Your email address
+4. Click **Create**
+5. Project appears in list and is set as **Active Project**
+
+### Workflow 2: Create a Context Bundle
+
+**Purpose**: Package your legacy code securely for AI analysis
+
+1. Navigate to **Context Bundles** page
+2. Click **Create Context Bundle**
+3. Fill in:
+   - **Name**: "Billing Module Source"
+   - **Description**: "Main billing calculation logic"
+   - **Sensitivity**: Select ULL or PB based on data classification
+4. **Add Text Constraints**:
+   - Click **Add Text Constraint**
+   - Name: "Target Architecture"
+   - Content: "Migrate to .NET MVC, preserve business logic exactly"
+5. **Add Files**:
+   - Click **Add File Input**
+   - Path: `legacy/billing.cbl`
+   - (In production, you'd upload actual file here)
+6. Click **Create Bundle**
+7. **Upload Progress**: Watch files upload to secure storage
+8. Click **Finalize Bundle**
+9. Bundle is now **Sealed** with cryptographic hashes
+
+### Workflow 3: Start a Run
+
+**Purpose**: Execute AI-assisted work package
+
+1. Navigate to **Runs** page or **Work Packages** section
+2. Browse available work packages:
+   - **Reverse Engineer**: Extract business logic and architecture
+   - **Scaffold Feature**: Generate modern code structure
+   - **Refactor Module**: Modernize existing code
+   - **Generate Tests**: Create comprehensive test suites
+   - **Generate Docs**: Create documentation
+3. Click **Start Run** on desired package
+4. Configure run:
+   - **Context Bundle**: Select your sealed bundle
+   - **Purpose**: Choose purpose (reverse_engineer, scaffold, etc.)
+   - **Data Class**: ULL or PB
+   - **Parameters**: Add any specific instructions
+5. Click **Start Run**
+
+### Workflow 4: Monitor Live Run
+
+**Purpose**: Watch AI agents work in real-time
+
+1. Run starts and **Run Console** opens
+2. Watch **Event Stream**:
+   - `run.started` - Run initiated
+   - `agent.started` - Agent begins work
+   - `agent.step` - Progress updates
+   - `artifact.created` - Output generated
+   - `run.completed` - Work finished
+3. View **Agent Timeline**:
+   - Planner → ReverseEngineer → Scaffolder → Tester → Reviewer
+4. Monitor **Costs**:
+   - Tokens in/out
+   - Estimated CAD cost
+5. **Cancel anytime** if needed
+
+### Workflow 5: Review Generated Code
+
+**Purpose**: Thoroughly review AI-generated changes with governance features
+
+This is the most powerful part of the platform!
+
+#### Basic Diff Viewing
+1. When run completes, click **View Artifacts**
+2. Select patch artifact
+3. See **unified diff** of all changes
+
+#### Enable Review Mode (Recommended!)
+1. Click **Enable Review Mode** toggle
+2. Now you see:
+
+   **Risk Indicators**:
+   - 🟢 **Green**: Low risk (docs, tests, config)
+   - 🟡 **Yellow**: Medium risk (scaffolding, wiring)
+   - 🔴 **Red**: High risk (business logic, auth, calculations)
+
+   **Overview Dashboard**:
+   - Total files changed
+   - Large diffs warning (>100 lines)
+   - Core layer touches (security/, auth/, domain/)
+   - Risk distribution chart
+
+   **Review Checklist**:
+   - [ ] Business logic inferred correctly?
+   - [ ] SME validation required?
+   - [ ] Tests generated?
+   - [ ] Security reviewed?
+   - [ ] Performance considered?
+
+#### Semantic Grouping (Understand Architecture)
+1. Click **Semantic Groups** tab
+2. Files organized by layer:
+   - **Controllers** (3 files) - API endpoints
+   - **DTOs** (2 files) - Data models
+   - **Services** (4 files) - Business logic
+   - **Tests** (6 files) - Test coverage
+   - **Docs** (2 files) - Documentation
+
+#### File Provenance (Full Audit Trail)
+Each file shows a **badge** with:
+- **Generated by**: Agent-Scaffolder-v2
+- **Model**: gpt-4o
+- **Context Bundle**: abc123... (hash)
+- **Run ID**: 01HXYZ... (clickable)
+- **Timestamp**: 2024-01-15T14:30:00Z
+
+Click badge to expand full details.
+
+#### Agent Rationale (Why Changes Were Made)
+1. On any file, click **"Why this change?"** button
+2. See:
+   - **Agent Name**: Scaffolder
+   - **Input Signals**: 
+     - billing.cbl
+     - Target Architecture constraint
+     - Existing .NET patterns
+   - **Assumptions**:
+     - ⚠️ Calculation logic is deterministic
+     - ⚠️ No currency rounding changes needed
+   - **Confidence**: High
+   - **Reasoning**: "Converted COBOL COMPUTE statements to C# decimal arithmetic, preserving exact calculation order..."
+
+This tells you **why the AI made specific choices**.
+
+#### Mark Review Status
+1. On each file header, click **Status** dropdown
+2. Select:
+   - ✅ **OK** - Approved, ready to merge
+   - 🧠 **Needs SME** - Requires subject matter expert
+   - 🔁 **Needs Re-run** - Regenerate with new constraints
+   - ⏳ **Pending** - Not yet reviewed
+3. Status persists even after page refresh
+
+#### Review Progress Tracking
+- **Summary Card** shows: "3 of 15 files reviewed (20%)"
+- **Bulk Actions**: Mark all as OK, or all as Pending
+- **Filter by Status**: Show only files needing SME
+
+#### Explain Specific Code Changes
+1. Right-click any diff section (or use menu)
+2. Select **"Explain This Hunk"**
+3. AI explains:
+   - **What changed**: "Replaced COBOL DIVIDE statement with C# decimal division"
+   - **Why necessary**: "C# doesn't have implicit decimal division; must use decimal type"
+   - **Watch out for**: "Verify rounding behavior matches COBOL"
+   - **How to test**: "Unit test: Assert.Equal(expectedResult, BillingCalc.Divide(a, b))"
+
+#### What Was NOT Touched
+1. Click **Excluded Files** tab
+2. See three sections:
+   - **Protected Zones**: Files AI cannot modify (auth/, security/)
+   - **Excluded by Constraints**: Files filtered by your rules
+   - **Intentionally Skipped**: Files detected but skipped (with reasoning)
+
+This proves "AI stayed in its lane."
+
+### Workflow 6: View Audit Trail
+
+**Purpose**: Maintain compliance and governance
+
+1. Navigate to **Run Details** page
+2. View **Audit Summary**:
+   - **Trace ID**: Unique identifier for full traceability
+   - **Purpose**: reverse_engineer
+   - **Data Class**: ULL
+   - **Timestamps**: Created, started, finished
+   - **Who**: User email
+   - **Project**: Billing System Migration
+   - **Context Bundle**: Billing Module Source (with hash)
+3. View **Costs**:
+   - Tokens in: 15,000
+   - Tokens out: 8,500
+   - Estimated cost: $0.42 CAD
+4. View **Models Used**:
+   - Planner: gpt-4o-mini
+   - Scaffolder: gpt-4o
+   - Tester: gpt-4o
+5. View **Warnings & Errors**:
+   - All warnings logged with timestamps
+6. **Export Report**: Download JSON with full audit data
+
+## 💡 Tips & Best Practices
+
+### Creating Effective Context Bundles
+
+**DO**:
+- ✅ Include only relevant files (focus on specific module)
+- ✅ Add clear text constraints about target architecture
+- ✅ Specify what NOT to change (e.g., "Do not modify authentication logic")
+- ✅ Include test files if available (helps AI understand behavior)
+- ✅ Seal bundles before running (ensures immutability)
+
+**DON'T**:
+- ❌ Upload entire 50GB codebase (focus on specific areas)
+- ❌ Include secrets, keys, or production credentials
+- ❌ Forget to specify target technology (e.g., ".NET MVC", "Java Spring")
+- ❌ Mix multiple unrelated modules in one bundle
+
+### Reviewing AI-Generated Code
+
+**High-Priority Review**:
+1. **🔴 High-risk files first**: Business logic, calculations, auth
+2. **Check assumptions**: Does AI's reasoning match reality?
+3. **Verify SME flags**: Bring in experts for domain-specific logic
+4. **Test coverage**: Ensure tests exist for critical paths
+
+**Time-Saving**:
+- Use **Semantic Grouping** to review by layer (Controllers → Services → Tests)
+- Mark **obvious files OK** (docs, config) quickly
+- Use **"Explain This Hunk"** only when confused
+- Focus on **🔴 Red** and **🟡 Yellow** files
+
+**Governance**:
+- Review **Provenance** to verify which agent/model was used
+- Check **"What Was NOT Touched"** to confirm protected zones respected
+- Export **Audit Report** for compliance records
+
+### Working with Legacy Code
+
+**COBOL Modernization**:
+- Add constraint: "Preserve exact calculation logic including rounding"
+- Add constraint: "Document all COBOL-specific behavior assumptions"
+- Review agent assumptions carefully (COBOL has quirks!)
+- Mark high-risk calculations for SME review
+
+**Client-Server Migration**:
+- Document data access patterns in constraints
+- Specify target ORM (Entity Framework, Hibernate, etc.)
+- Flag stateful session logic for manual review
+
+**Three-Tier Refactoring**:
+- Specify modern architecture patterns (MVC, MVVM, Clean Architecture)
+- Include existing layer structure in context
+- Mark cross-cutting concerns (logging, auth) for careful review
+
+## 🔧 Configuration Options
+
+### Language Toggle
+- Top-right: Globe icon
+- Switch between **EN** (English) and **FR** (French)
+- Preference persists across sessions
+
+### Demo Mode
+- **Settings** → Toggle **Demo Mode**
+- Uses mock data when backend unavailable
+- Perfect for training and demos
+
+### APIM Base URL
+- **Settings** → **APIM Base URL**
+- Override for testing different environments
+- Default: `/devbench/v1` (relative)
+
+## 🐛 Troubleshooting
+
+### "Not authenticated" warning
+- Authentication stub is active
+- For production: Entra ID integration required
+- For demo: Ignore warning, use demo mode
+
+### No projects appearing
+- Enable **Demo Mode** in Settings
+- Or ensure APIM backend is reachable
+
+### File upload fails
+- In demo mode: Uploads are simulated
+- For production: Ensure signed URLs from backend are valid
+
+### SSE events not streaming
+- Check browser supports Server-Sent Events
+- Verify APIM allows streaming responses
+- In demo: Events are simulated with delays
+
+### Review status not saving
+- Check browser localStorage is enabled
+- State persists via `useKV` hook
+- Clear browser data to reset
+
+## 📖 Further Reading
+
+- **EXPORT.md**: Complete technical documentation
+- **DEPLOYMENT.md**: Production deployment guide
+- **PRD.md**: Product requirements and design decisions
+- **OpenAPI Spec**: Full API contract (in previous context)
+
+## 🆘 Getting Help
+
+1. Check **Settings** → **Health Check** for API status
+2. Review browser console for errors
+3. Enable **Demo Mode** to verify UI functionality
+4. Refer to **EXPORT.md** for architecture details
+5. Contact platform team for backend/APIM issues
+
+## 🎓 Training Checklist
+
+New user onboarding - complete these tasks:
+
+- [ ] Create a project
+- [ ] Create a context bundle with text constraints
+- [ ] Finalize (seal) the bundle
+- [ ] Start a work package run
+- [ ] Watch event stream in Run Console
+- [ ] Enable Review Mode on a patch artifact
+- [ ] View semantic groups
+- [ ] Check agent rationale on a file
+- [ ] Mark file review status
+- [ ] Use "Explain This Hunk" feature
+- [ ] View "What Was NOT Touched" panel
+- [ ] Check file provenance badge
+- [ ] Review audit trail and costs
+- [ ] Toggle between EN/FR languages
+- [ ] Export audit report (JSON)
+
+**Completion time**: ~30 minutes with demo mode
+
+---
+
+**Document Version**: 1.0  
+**Last Updated**: 2024-01  
+**For**: EVA DevBench MVP (20 iterations)
