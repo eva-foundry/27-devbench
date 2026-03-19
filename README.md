@@ -1,12 +1,33 @@
 # EVA DevBench
 
+<!-- eva-primed -->
+<!-- foundation-primer: 2026-03-03 by agent:copilot -->
+
+## EVA Ecosystem Integration
+
+| Tool | Purpose | How to Use |
+|------|---------|------------|
+| 37-data-model | Single source of truth for all project entities | GET http://localhost:8010/model/projects/27-devbench |
+| 29-foundry | Agentic capabilities (search, RAG, eval, observability) | C:\eva-foundry\eva-foundation\29-foundry |
+| 48-eva-veritas | Trust score and coverage audit | MCP tool: audit_repo / get_trust_score |
+| 07-foundation-layer | Copilot instructions primer + governance templates | MCP tool: apply_primer / audit_project |
+
+**Agent rule**: Query the data model API before reading source files.
+```powershell
+Invoke-RestMethod "http://localhost:8010/model/agent-guide"   # complete protocol
+Invoke-RestMethod "http://localhost:8010/model/agent-summary" # all layer counts
+```
+
+---
+
+
 ![Azure Static Web Apps CI/CD](https://github.com/YOUR_ORG/YOUR_REPO/workflows/Azure%20Static%20Web%20Apps%20CI%2FCD/badge.svg)
 
 **AI-Assisted Software Engineering Platform for Legacy Modernization**
 
 EVA DevBench is a production-quality web application designed for government engineering teams modernizing legacy applications. It orchestrates AI-assisted work packages (reverse engineering, scaffolding, refactoring, testing, documentation) and produces auditable artifacts through secure, traceable runs.
 
-## 🎯 Purpose
+## ?? Purpose
 
 Support developers reducing technical debt in application libraries based on 60+ years of legacy technology:
 - COBOL mainframe applications
@@ -14,7 +35,7 @@ Support developers reducing technical debt in application libraries based on 60+
 - Three-tier legacy systems
 - Untested or undocumented codebases
 
-## ✨ Key Features
+## ? Key Features
 
 ### Core Capabilities
 - **Project Management**: Organize modernization work with metadata tracking
@@ -40,7 +61,7 @@ Support developers reducing technical debt in application libraries based on 60+
 - **Bilingual Support**: EN/FR toggle with persistent preference
 - **WCAG 2.1 AA**: Full keyboard navigation and accessibility
 
-## 🚀 Quick Start
+## ?? Quick Start
 
 ### Installation
 ```bash
@@ -60,7 +81,7 @@ Access at `http://localhost:5173`
 
 See **QUICKSTART.md** for detailed workflows.
 
-## 📚 Documentation
+## ?? Documentation
 
 - **[QUICKSTART.md](./QUICKSTART.md)**: 5-minute demo setup and core workflows
 - **[EXPORT.md](./EXPORT.md)**: Complete technical documentation and architecture
@@ -69,7 +90,7 @@ See **QUICKSTART.md** for detailed workflows.
 - **[QUICKSTART_DEPLOY.md](./QUICKSTART_DEPLOY.md)**: Deploy in 5 minutes quick reference
 - **[PRD.md](./PRD.md)**: Product requirements and design decisions
 
-## 🏗️ Technology Stack
+## ??? Technology Stack
 
 - **Framework**: React 19.2.0 + TypeScript 5.7.3
 - **Build Tool**: Vite 7.2.6
@@ -79,14 +100,14 @@ See **QUICKSTART.md** for detailed workflows.
 - **HTTP**: Fetch API with APIM integration
 - **Real-time**: Server-Sent Events (SSE)
 
-## 🎨 Design System
+## ?? Design System
 
 - **Colors**: OKLCH color space for perceptual uniformity
 - **Typography**: Space Grotesk (headings), Inter (body), JetBrains Mono (code)
 - **Accessibility**: WCAG 2.1 AA compliant
 - **Animations**: Purposeful, subtle motion with Framer Motion
 
-## 🔐 Security
+## ?? Security
 
 - No client-side secrets
 - All API calls through Azure APIM gateway
@@ -94,14 +115,14 @@ See **QUICKSTART.md** for detailed workflows.
 - Cryptographic bundle sealing
 - Protected zone enforcement
 
-## 📊 Project Status
+## ?? Project Status
 
 **Version**: 0.1.0 (MVP)  
 **Iterations**: 20 completed  
 **Status**: Production-ready for Azure EsDAICoESub sandbox  
 **Deployment Target**: Azure Static Web Apps or App Service
 
-## 🏛️ Use Cases
+## ??? Use Cases
 
 ### COBOL Modernization
 - Reverse engineer mainframe business logic
@@ -121,7 +142,7 @@ See **QUICKSTART.md** for detailed workflows.
 - Document undocumented systems
 - Modernize UI layers
 
-## 🤝 Contributing
+## ?? Contributing
 
 This application is designed for secure government environments. Before contributing:
 
@@ -131,14 +152,14 @@ This application is designed for secure government environments. Before contribu
 4. Add translations for EN/FR
 5. Update PRD.md with feature changes
 
-## 📞 Support
+## ?? Support
 
 - **Technical Documentation**: See EXPORT.md
 - **Deployment Issues**: See DEPLOYMENT.md  
 - **Feature Questions**: See PRD.md
 - **Training**: See QUICKSTART.md
 
-## ⚖️ License
+## ?? License
 
 Spark Template files and resources from GitHub are licensed under the MIT license, Copyright GitHub, Inc.
 
